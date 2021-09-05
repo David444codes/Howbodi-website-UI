@@ -1,3 +1,13 @@
+// Navbar Menu toggle
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('.navbar-menu');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+})
+
+
+
 // Modal
 
 const assessmentBox = document.querySelector('#assessment');
@@ -26,15 +36,3 @@ subModalClose.addEventListener('click', () => {
     SubModal.classList.remove('is-active');
 })
 
-
-// let button = document.getElementById('subscribe');
-// let subModal = document.getElementById('subscribe-modal');
-// let close = document.getElementsByClassName('modal-close')[0];
-
-// button.onclick = function(){
-//     subModal.style.display = 'block';
-// }
-
-// close.onclick = function(){
-//     subModal.style.display = 'none';
-// }

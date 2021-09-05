@@ -545,7 +545,27 @@ a.signup-start {
 
 
 @media screen and (max-width: 768px) {
+
+.hero-body {
+    flex-grow:inherit;
+}
+    
+    .hero.is-fullheight {
+        min-height: auto;
+    }
+
     .remove-img-sm {
         display: none;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content svg {
+        margin-bottom: 20px;
+    }
+
+    .footer-text-container {
+        flex-wrap: wrap;
     }
 }
