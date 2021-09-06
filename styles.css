@@ -557,11 +557,24 @@ a.signup-start {
     .remove-img-sm {
         display: none;
     }
+
+    .get-button {
+        margin: 10px 120px;
+        border-top-left-radius:4px;
+        border-bottom-left-radius: 4px;
+    }
     .footer-content {
         flex-direction: column;
     }
 
+    .footer-text-container {
+        display: flex;
+        margin-left: 30px;
+        
+    }
+
     .footer-content svg {
+        margin-left: 20px;
         margin-bottom: 20px;
     }
 
