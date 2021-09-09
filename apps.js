@@ -7,32 +7,27 @@ burgerIcon.addEventListener('click', () => {
 });
 
 
-
 // Modal
 
-const assessmentBox = document.querySelector('#assessment');
-const modalClose = document.querySelector('.closeModal');
-const modal = document.querySelector('.modal');
+  let bigModal = function(){
+    const assessmentBox = document.querySelector('#assessment');
+    const modalClose = document.querySelector('.closeModal');
+    const modal = document.querySelector('.textmodal');
 
-assessmentBox.addEventListener('click', () => {
-    modal.classList.add('is-active'); 
-});
+    assessmentBox.addEventListener('click', () => {
+        modal.classList.add('is-active'); 
+    });
 
-modalClose.addEventListener('click', () => {
-    modal.classList.remove('is-active');
-})
+    modalClose.addEventListener('click', () => {
+        modal.classList.remove('is-active');
+    })
+  }
+  let assessmentCard = document.querySelector('#assessment');
+    assessmentCard.onclick = () => bigModal()
 
 
-// Subscribe Modal
-// const subscribeModal = document.querySelector('#subscribe');
-// const subModalClose = document.querySelector('.close-subscribe-Modal');
-// const SubModal = document.querySelector('.subscribe-modal');
 
-// subscribeModal.addEventListener('click', () => {
-//     SubModal.classList.add('is-active'); 
-// });
 
-// subModalClose.addEventListener('click', () => {
-//     SubModal.classList.remove('is-active');
-// })
+
+
 

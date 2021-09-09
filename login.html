@@ -67,27 +67,27 @@
       <section class="section">
           <div class="container contact-container">
               <h2 class="login-h2 is-size-4 has-text-weight-medium has-text-centered pb-5 login-h2">Welcome Back</h2>
-               <form>
+               <form id="form">
                    <div class="field">
                        <div class="control">
-                           <input class="input is-medium pb-3 mb-4" type="text" placeholder="Username or email">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="text" placeholder="Email" id="email">
                          </div>
                    </div>
 
                    <div class="field">
                        <div class="control">
-                           <input class="input is-medium pb-3" type="text" placeholder="Password">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="text" placeholder="Password" id="password">
                          </div>
                    </div>
 
                    <div class="container has-text-centered pb-6 forgot-pass">
-                   <!-- <small class="is-size-6 ">
-                    Forgot Password?
-                   </small> -->
+
                    <a href="#" class="is-size-6 has-text-weight-bold"> <u>Forgot Password? </u></a>
                 </div>
                
-                  <button class="button form-button is-medium is-fullwidth has-text-weight-medium"><a href="./index.html"></a> Log in</button>
+                  <button onclick=" login()" class="button form-button is-medium is-fullwidth has-text-weight-medium"><a href="./index.html"></a> Log in</button>
 
                   <div class="socials has-text-centered pt-4 ">
                     <div class="icon fb">
@@ -168,5 +168,6 @@
               <!-- Footer end -->
 
       <script src="./apps.js"></script>
+      <script src="./forms.js"></script>
 </body>
 </html>

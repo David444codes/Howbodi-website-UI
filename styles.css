@@ -388,7 +388,7 @@ ul li a {
 
 /* Contact */
 .contact-container {
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 form {
@@ -406,8 +406,24 @@ form .form-button{
 .control ::placeholder {
     color:#3D6E92;
     font-size: 16px;
-
 }
+
+.control.success input {
+    border: 1px solid#2FC09D;
+}
+
+.control.error input {
+    border: 1px solid#e74e3c;
+}
+
+.control small {
+    visibility: hidden;
+} 
+
+.control.error small {
+    visibility: visible;
+    color: #e74e3c;
+} 
 
 
 
@@ -432,6 +448,10 @@ u {
 }
 
 /* Sign up */
+.signup-section {
+    padding: 1.5rem 1.5rem;
+}
+
 a.signup-start {
     background-color: #6A8BA3 !important;
     color: #fff;
@@ -541,6 +561,10 @@ a.signup-start {
     .assessment-form .assement-details {
         padding-left: 20%;
     }
+    .contain {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -559,7 +583,8 @@ a.signup-start {
     }
 
     .get-button {
-        margin: 10px 120px;
+        margin: auto;
+        display: flex;
         border-top-left-radius:4px;
         border-bottom-left-radius: 4px;
     }
@@ -581,4 +606,12 @@ a.signup-start {
     .footer-text-container {
         flex-wrap: wrap;
     }
+    .get-inputs {
+        margin-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .about-h4 {
+        font-size: 38px;
+
 }

@@ -64,25 +64,35 @@
 
     
       <!-- Log in form section start -->
-      <section class="section">
+      <section class="section signup-section">
           <div class="container contact-container">
               <h2 class="login-h2 is-size-4 has-text-weight-medium has-text-centered pb-5 login-h2">Create your Account</h2>
-               <form>
+               <form id="forms">
                    <div class="field">
                        <div class="control">
-                           <input class="input is-medium pb-3 mb-4" type="text" placeholder="First Name">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="text" placeholder="First Name" id="firstname">
                          </div>
                    </div>
 
                    <div class="field">
                        <div class="control">
-                           <input class="input is-medium pb-3 mb-4" type="text" placeholder="Last Name">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="text" placeholder="Last Name" id="lastname">
                          </div>
                    </div>
 
                    <div class="field">
                        <div class="control">
-                           <input class="input is-medium pb-3" type="text" placeholder="Email Address">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="email" placeholder="Email Address" id="email">
+                         </div>
+                   </div>
+
+                   <div class="field">
+                       <div class="control">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="text" placeholder="Password" id="password">
                          </div>
                    </div>
                
@@ -166,5 +176,7 @@
               </div>
               <!-- Footer end -->
 
+      <script src="./apps.js"></script>
+      <script src="./forms.js"></script>
 </body>
 </html>

@@ -311,7 +311,7 @@
                 <div class="column">
                   <div class="control columns py-3">
                     <input class="input get-inputs" type="text" placeholder="Email Address">
-                    <button class="button get-button">Subscribe</button>
+                    <button class="button get-button" id="subscribe">Subscribe</button>
                   </div>
                 </div>
               </div>
@@ -380,7 +380,7 @@
 
       <!-- Modal start -->
 
-      <div class="modal">
+      <div class="modal textmodal">
         <div class="modal-background"></div>
         <div class="modal-content ">
           <div class="contain mt-6 assement-container">
@@ -441,7 +441,21 @@
     
       <!-- Modal end -->
 
+      <!-- subscribe Modal start-->
+
+      <div class="modal" id="subscribe-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content subscribe is-size-6">
+          Yes! You have Subscribed
+        </div>
+        <button class="modal-close close-subscribe-Modal is-large" aria-label="close"></button>
+      </div>
+    
+
+      <!-- subscribe Modal end-->
+
       <!-- Java-Script -->
       <script src="./apps.js"></script>
+      <script src="./subscribe.js"></script>
 </body>
 </html>

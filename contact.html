@@ -64,25 +64,28 @@
 
     
       <!-- Contact form section start -->
-      <section class="section">
+      <section class="section signup-section">
           <div class="container contact-container">
               <h2 class="is-size-2 has-text-weight-medium has-text-black has-text-centered pb-3" >Say hello!</h2>
-               <form>
+               <form id="contact">
                    <div class="field">
                        <div class="control">
-                           <input class="input is-medium pb-3" type="text" placeholder="Full Name">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="text" placeholder="Full Name" id="fullname">
                          </div>
                    </div>
 
                    <div class="field">
                        <div class="control">
-                           <input class="input is-medium pb-3" type="text" placeholder="Email Address">
+                         <small></small>
+                           <input class="input is-medium pb-3" type="email" placeholder="Email Address" id="contact_email">
                          </div>
                    </div>
 
                    <div class="field pb-2">
                     <div class="control">
-                      <textarea class="textarea" placeholder="Message Here"></textarea>
+                      <small></small>
+                      <textarea class="textarea" placeholder="Message Here" id="textarea"></textarea>
                     </div>
                   </div>
                   <button class="button form-button is-medium is-fullwidth">Send Message</button>
@@ -104,7 +107,7 @@
                         <div class="column">
                           <div class="control columns py-3">
                             <input class="input get-inputs" type="text" placeholder="Email Address">
-                            <button class="button get-button">Subscribe</button>
+                            <button class="button get-button" id="subscribe">Subscribe</button>
                           </div>
                         </div>
                       </div>
@@ -170,7 +173,21 @@
               </div>
               <!-- Footer end -->
 
+                <!-- subscribe Modal start-->
+
+              <div class="modal" id="subscribe-modal">
+                <div class="modal-background"></div>
+                <div class="modal-content subscribe is-size-6">
+                  Yes! You have Subscribed
+                </div>
+                <button class="modal-close close-subscribe-Modal is-large" aria-label="close"></button>
+              </div>
+   
+
+                <!-- subscribe Modal end-->
               
           <script src="./apps.js"></script>
+          <script src="./script.js"></script>
+          <script src="./subscribe.js"></script>
 </body>
 </html>
